@@ -4,8 +4,7 @@ Static privacy policy site for the iOS app `公關日記`.
 
 ## Files
 
-- `index.html`: privacy policy page
-- `copyright.html`: copyright page
+- `index.html`: privacy policy + copyright combined page
 - `styles.css`: visual styling aligned with the app's current look
 - `assets/app-icon.png`: public site icon
 
