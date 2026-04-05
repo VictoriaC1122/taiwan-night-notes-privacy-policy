@@ -1,11 +1,13 @@
-# Taiwan Night Notes Privacy Policy Site
+# Public Relations Diary Policy Site
 
-Static privacy policy site for the iOS app `臺灣八大日記`.
+Static privacy policy site for the iOS app `公關日記`.
 
 ## Files
 
 - `index.html`: privacy policy page
+- `copyright.html`: copyright page
 - `styles.css`: visual styling aligned with the app's current look
+- `assets/app-icon.png`: public site icon
 
 ## Intended deployment
 
