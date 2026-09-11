@@ -33,6 +33,14 @@ body {
   overflow-x: hidden;
 }
 
+:lang(en) body {
+  font-family: "Noto Sans", "Noto Sans TC", sans-serif;
+}
+
+:lang(ja) body {
+  font-family: "Noto Sans JP", "Noto Sans TC", sans-serif;
+}
+
 body::before {
   content: "";
   position: fixed;
@@ -110,6 +118,34 @@ body::before {
   margin-bottom: 18px;
 }
 
+.language-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.language-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 7px 11px;
+  border-radius: 999px;
+  color: var(--text-soft);
+  background: rgba(255, 255, 255, 0.48);
+  border: 1px solid rgba(217, 98, 149, 0.12);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.language-link[aria-current="page"] {
+  color: #fff;
+  background: linear-gradient(135deg, #9c6bc8, var(--lavender));
+  border-color: transparent;
+}
+
 .nav-pill {
   display: inline-flex;
   align-items: center;
@@ -166,6 +202,16 @@ h1 {
   font-size: clamp(2.3rem, 4.4vw, 4rem);
   line-height: 1.06;
   letter-spacing: 0.02em;
+}
+
+:lang(en) h1,
+:lang(en) h2 {
+  font-family: "Noto Serif", "Noto Serif TC", serif;
+}
+
+:lang(ja) h1,
+:lang(ja) h2 {
+  font-family: "Noto Serif JP", "Noto Serif TC", serif;
 }
 
 h2 {

@@ -10,7 +10,7 @@
   >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&amp;family=Noto+Serif+TC:wght@700;900&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -20,6 +20,11 @@
   <main class="page-shell">
     <section class="hero-card">
       <div class="hero-copy">
+        <nav class="language-nav" aria-label="語言選擇">
+          <a class="language-link" href="./" lang="zh-Hant" hreflang="zh-Hant" aria-current="page">繁體中文</a>
+          <a class="language-link" href="./en/" lang="en" hreflang="en">English</a>
+          <a class="language-link" href="./ja/" lang="ja" hreflang="ja">日本語</a>
+        </nav>
         <nav class="top-nav" aria-label="頁內導覽">
           <a class="nav-pill is-active" href="#privacy">隱私權政策</a>
           <a class="nav-pill" href="#copyright">版權說明</a>
@@ -43,7 +48,7 @@
       <aside class="hero-status">
         <div class="status-card">
           <span class="status-label">更新日期</span>
-          <strong>2026 年 9 月 11 日</strong>
+          <strong>2026 年 9 月 12 日</strong>
         </div>
         <div class="status-card">
           <span class="status-label">資料模式</span>
@@ -99,7 +104,7 @@
           目前版本的資料保存在你的裝置本機，用來讓你之後回看、搜尋與編輯自己的紀錄。
           開發者不以伺服器形式接收或集中保存這些日記內容。
         </p>
-        <p>你可從 app 的「設定 → 備份資料」自行建立加密備份檔；密碼不會傳送或保存給開發者。備份檔會由你選擇儲存位置，因此請自行妥善保管檔案與密碼。</p>
+        <p>你可從 app 的「設定 → 備份資料」自行建立以 AES-256-GCM 加密的備份檔，密鑰由你的密碼透過 PBKDF2-HMAC-SHA256 產生；密碼不會傳送或保存給開發者。備份檔會由你選擇儲存位置，因此請自行妥善保管檔案與密碼。</p>
         <p>若你刪除 app、在 app 內清除資料、重置裝置或更換裝置，未另外備份的內容可能無法保留或恢復。</p>
       </article>
 
@@ -112,6 +117,7 @@
           <li>在你的裝置上排程你主動開啟的日記或回訪提醒。</li>
           <li>維持 app 的基本功能與使用體驗。</li>
         </ul>
+        <p>當你主動匯出備份或報表時，app 會將檔案交給 iOS 的「檔案」或分享介面；你選擇的儲存位置、雲端服務或接收者，將依各自的隱私條款處理該檔案。</p>
         <p>目前版本不以廣告投放、跨網站追蹤或資料經紀為目的使用你的資料，也不會將你的日記內容出售或分享給第三方。</p>
       </article>
 
@@ -124,8 +130,8 @@
         </p>
         <p>
           目前版本沒有開發者自建的會員帳號、第三方登入、開發者雲端同步或自建資料分析後台。
-          可選的「公關日記 Pro」為 Apple App Store 處理的自動續訂訂閱；付款、續訂與取消均透過你的 Apple 帳號完成，
-          app 與開發者不會取得或保存付款卡資料、Apple 帳號付款資訊或日記內容。本 app 的主題與內容也不以兒童為目標對象。
+          可選的「公關日記 Pro」為 Apple App Store 處理的自動續訂訂閱；付款、續訂與取消均透過你的 Apple 帳號完成。StoreKit 會向 app 提供商品資訊及訂閱權益狀態，
+          但 app 與開發者不會取得或保存付款卡資料、完整的 Apple 帳號付款資訊或日記內容。本 app 的主題與內容也不以兒童為目標對象。
           若未來新增第三方 SDK、分析工具或崩潰回報服務，將在政策更新時一併揭露。
         </p>
       </article>
