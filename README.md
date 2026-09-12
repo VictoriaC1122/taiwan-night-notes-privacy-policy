@@ -5,6 +5,7 @@ Static privacy policy site for the iOS app `公關日記`.
 ## Files
 
 - `index.html`: Traditional Chinese privacy policy + copyright + support page
+- `zh-Hans/index.html`: Simplified Chinese privacy policy + copyright + support page
 - `en/index.html`: English privacy policy + copyright + support page
 - `ja/index.html`: Japanese privacy policy + copyright + support page
 - `styles.css`: visual styling aligned with the app's current look

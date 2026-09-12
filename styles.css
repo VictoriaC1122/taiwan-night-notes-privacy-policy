@@ -37,6 +37,10 @@ body {
   font-family: "Noto Sans", "Noto Sans TC", sans-serif;
 }
 
+:lang(zh-Hans) body {
+  font-family: "Noto Sans SC", "Noto Sans TC", sans-serif;
+}
+
 :lang(ja) body {
   font-family: "Noto Sans JP", "Noto Sans TC", sans-serif;
 }
@@ -207,6 +211,11 @@ h1 {
 :lang(en) h1,
 :lang(en) h2 {
   font-family: "Noto Serif", "Noto Serif TC", serif;
+}
+
+:lang(zh-Hans) h1,
+:lang(zh-Hans) h2 {
+  font-family: "Noto Serif SC", "Noto Serif TC", serif;
 }
 
 :lang(ja) h1,
