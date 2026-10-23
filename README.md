@@ -1,16 +1,14 @@
-# Public Relations Diary Policy Site
+# taiwan-night-notes-privacy-policy
 
-Static privacy policy site for the iOS app `公關日記`.
+此網站已搬到花火工作室 FireSparkle.Studio 官網。這個 repo 只保留轉址頁，讓舊版 App、App Store 與外部連結自動轉到新網址。
 
-## Files
+- 作品頁：https://firesparkle.com/app/pr-diary/
+- 隱私權政策：https://firesparkle.com/app/pr-diary/privacy/
+- 支援與聯絡：https://firesparkle.com/app/pr-diary/support/
+- 聯絡信箱：firesparkle.studio@gmail.com
 
-- `index.html`: Traditional Chinese privacy policy + copyright + support page
-- `zh-Hans/index.html`: Simplified Chinese privacy policy + copyright + support page
-- `en/index.html`: English privacy policy + copyright + support page
-- `ja/index.html`: Japanese privacy policy + copyright + support page
-- `styles.css`: visual styling aligned with the app's current look
-- `assets/app-icon.png`: public site icon
+轉址規則：網址含 privacy 轉到隱私權政策；含 support、contact 轉到支援與聯絡；含 copyright 轉到支援頁的版權標示；含 terms 轉到 Apple 標準授權條款（EULA）。舊網址的語言（`?lang=`、`/en/`、`/ja/`、`/zh-Hans/`）會帶到新網站。
 
-## Intended deployment
+舊的網站內容保留在 git 歷史中。確認 App Store Connect 與各 App 新版都已改用 firesparkle.com 後，可以到 Settings → Pages 關閉這個網站。
 
-This site is designed to be published with GitHub Pages under a new repository owned by `VictoriaC1122`.
+© 花火工作室 FireSparkle.Studio
